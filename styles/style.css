@@ -22,11 +22,9 @@ html {
   user-select: none;
 }
 
-/*шаг 1*/
 .content {
   align-items: flex-end;
   display: grid;
-  /* + */
   grid-template-areas: "result content__details";
   gap: 30px;
   padding: 0 30px;
@@ -34,7 +32,6 @@ html {
 
 .result {
   grid-area: result;
-  /*+*/
 }
 
 .search-form {
@@ -45,7 +42,6 @@ html {
 
 .content__details {
   grid-area: content__details;
-  /*+*/
   width: 100%;
 }
 
@@ -65,13 +61,12 @@ video {
   position: relative;
 
 }
-/* шаг 2*/
+
 .result__video-container video {
   margin-bottom: 16px;
   object-fit: fill;
 }
 
-/*все ок*/
 .content__list {
   display: flex;
   flex-direction: column;
@@ -98,7 +93,6 @@ video {
   overflow: hidden;
 }
 
-/* шаг 3*/
 .search-form__fieldset-title {
   font-size: 18px;
   font-weight: 400;
@@ -149,7 +143,6 @@ video {
   word-break: break-word;
 }
 
-/* Шаг 4 */
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -183,7 +176,6 @@ fieldset {
   font-size: 18px;
   line-height: 21.6px;
   appearance: none;
-
   border-top: 1px solid #fff;
   border-right: 1px solid transparent;
   border-bottom: 1px solid #fff;
@@ -200,7 +192,6 @@ fieldset {
   cursor: text;
 }
 
-/*!*/
 .search-form__textfield:focus,
 button:focus {
   outline: none;
@@ -236,7 +227,6 @@ button:focus-visible {
   display: block;
 }
 
-/*add butttonn and list of city*/
 .search-form__checkbox-list .search-form__label:hover,
 .button:hover,
 .content__video-card:hover {
@@ -252,7 +242,6 @@ button:focus-visible {
   text-underline-offset: 6px;
 }
 
-/*Шаг 5*/
 .button {
   background: transparent;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -283,7 +272,6 @@ button:focus-visible {
   padding: 6px 0;
 }
 
-/* дефолтные стили*/
 h1,
 h2,
 h3,
@@ -303,7 +291,6 @@ ol {
   list-style: none;
 }
 
-/* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
 }
