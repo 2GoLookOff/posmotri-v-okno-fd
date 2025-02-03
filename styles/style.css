@@ -32,6 +32,7 @@ html {
 
 .result {
   grid-area: result;
+  padding-bottom: 5px;
 }
 
 .search-form {
@@ -47,24 +48,20 @@ html {
 
 .content__list-container {
   overflow-y: auto;
-  height: 297px;
+  height: 304px;
   padding: 3px;
-}
-
-video {
-  width: 711px;
-  height: 386px;
 }
 
 .content__list-container,
 .result__video-container {
   position: relative;
-
 }
 
 .result__video-container video {
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   object-fit: fill;
+  width: 711px;
+  height: 386px;
 }
 
 .content__list {
@@ -105,7 +102,7 @@ video {
   line-height: 70.5px;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 26px;
+  margin-bottom: 19px;
   font-weight: 700;
 }
 
@@ -114,12 +111,12 @@ video {
 }
 
 .content__card-link {
-  font-family: "Oswald", sans-serif;
   color: #fff;
   text-decoration: none;
 }
 
 .content__video-card-title {
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 30px;
   max-width: 12ch;
@@ -127,11 +124,10 @@ video {
   text-overflow: ellipsis;
   font-weight: 700;
   line-height: 30px;
-  padding-bottom: 6px;
+  margin-bottom: 5px;
 }
 
 .content__video-card-description {
-  padding: 6px 0;/*?*/
   font-weight: 400;
   line-height: 16.2px;
   max-width: 20ch;
@@ -232,14 +228,6 @@ button:focus-visible {
 .content__video-card:hover {
   text-decoration: underline;
   cursor: pointer;
-}
-.search-form__checkbox-list .search-form__label:hover,
-.button:hover {
-  text-underline-offset: 3px;
-}
-
-.content__video-card:hover {
-  text-underline-offset: 6px;
 }
 
 .button {
