@@ -112,7 +112,6 @@ video {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 100%;
   }
 
 .content__video-card-thumbnail {
