@@ -22,6 +22,38 @@ html {
   user-select: none;
 }
 
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgb(217 217 217 / 10%);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #d9d9d9;
+}
+
 .content {
   align-items: flex-end;
   display: grid;
@@ -49,6 +81,7 @@ html {
 .content__list-container {
   overflow-y: auto;
   height: 304px;
+  width: 399px;
   padding: 3px;
 }
 
@@ -60,11 +93,11 @@ html {
 video {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .result__video-container {
   margin-bottom: 14px;
-  object-fit: fill;
   width: 711px;
   height: 386px;
 }
@@ -80,8 +113,7 @@ video {
   justify-content: space-between;
   align-items: flex-start;
   max-width: 100%;
-  overflow-y: hidden;
-}
+  }
 
 .content__video-card-thumbnail {
   max-width: 194px;
@@ -270,35 +302,4 @@ button:focus-visible {
 .more-button {
   width: 100%;
   padding: 6px 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-blockquote,
-fieldset {
-  margin: 0;
-  padding: 0;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-.custom-scrollbar::-webkit-scrollbar {
-  width: 4px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: rgb(217 217 217 / 10%);
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #d9d9d9;
 }
